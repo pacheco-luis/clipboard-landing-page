@@ -1,0 +1,74 @@
+// Colors
+// --------------------------------------------------
+// Primary Colors
+$color-primary-strong-cyan: hsl(171, 66%, 44%);
+$color-primary-light-blue: hsl(233, 100%, 69%);
+
+// Neutral Colors
+$color-neutral-dark-grayish-blue: hsl(210, 10%, 33%);
+$color-neutral-grayish-blue: hsl(201, 11%, 66%);
+$color-neutral-white: hsl(0, 0%, 100%);
+
+// Neutral Variants (Opacity adjustments)
+$color-neutral-grayish-blue-opacity-10: hsl(201, 11%, 66%, 10.02%);
+$color-neutral-white-opacity-25: hsl(0, 0%, 100%, 25.35%);
+$color-neutral-white-opacity-24: hsl(0, 0%, 100%, 24.88%);
+
+// Typography
+// --------------------------------------------------
+// Base Font Size
+$font-size-base: 1.8rem;
+
+// Font Sizes
+$font-size-sm: 1.6rem;
+$font-size-md: 2rem;
+$font-size-lg: 2.4rem;
+$font-size-xl: 2.8rem;
+$font-size-2xl: 3.2rem;
+$font-size-3xl: 3.6rem;
+$font-size-4xl: 4.6rem;
+
+// Font Weights
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+// Font Family
+$font-family-base: "Bai Jamjuree", sans-serif;
+
+// Shadows
+// --------------------------------------------------
+// Shadow Effects
+$shadow-inner-black-light: inset 0 -0.3rem 0 hsl(0, 0%, 0%, 15.13%);
+$shadow-drop-cyan-light: 0 1rem 2rem hsl(160, 64%, 72%, 50.33%);
+$shadow-drop-black-light: 0 1rem 2rem hsl(0, 0%, 0%, 9.88%);
+
+// Line Heights
+// --------------------------------------------------
+
+// Line Heights
+$line-height-normal: normal;
+$line-height-md: 2.6rem;
+$line-height-lg: 3rem;
+
+// Letter Spacing
+// --------------------------------------------------
+
+// Letter Spacing
+$letter-spacing-wide: 0.05rem;
+$letter-spacing-normal: 0.015rem;
+$letter-spacing-tight: 0.014rem;
+$letter-spacing-tighter: 0.012rem;
+$letter-spacing-negative-1: -0.039rem;
+$letter-spacing-negative-2: -0.046rem;
+$letter-spacing-negative-3: -0.052rem;
+$letter-spacing-negative-4: -0.059rem;
+$letter-spacing-negative-5: -0.075rem;
+
+// Layout
+// --------------------------------------------------
+// Container Layout
+$container-max-width: 117.4rem;
+$container-padding-inline: 3.2rem;
+
+// Transform Translations
+$translate-offset: 3.2rem;

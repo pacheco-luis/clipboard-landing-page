@@ -1,0 +1,18 @@
+$breakpoints: (
+  // 600px
+  tab-port: 37.5em,
+  // 960px
+  tab-land: 60em
+);
+
+@mixin respond($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+
+  @if $size != null {
+    @media only screen and (min-width: $size) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint}` not found in `$breakpoints` map.";
+  }
+}

@@ -1,0 +1,53 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    position: relative;
+    display: inline-block;
+    max-width: 31.1rem;
+    width: 100%;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    letter-spacing: $letter-spacing-wide;
+    line-height: $line-height-lg;
+    color: $color-neutral-white;
+    padding-block: 1.3rem;
+    border-radius: 2.8rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      opacity: 0;
+      border-radius: 2.8rem;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &--cyan {
+    background-color: $color-primary-strong-cyan;
+    box-shadow: $shadow-drop-cyan-light, $shadow-inner-black-light;
+
+    &::before {
+      background-color: $color-neutral-white-opacity-25;
+    }
+  }
+
+  &--blue {
+    background-color: $color-primary-light-blue;
+    box-shadow: $shadow-drop-black-light, $shadow-inner-black-light;
+
+    &::before {
+      background-color: $color-neutral-white-opacity-24;
+    }
+  }
+}

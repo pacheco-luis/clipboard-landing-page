@@ -1,0 +1,80 @@
+body {
+  font-family: $font-family-base;
+  text-align: center;
+}
+
+%heading {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-normal;
+  color: $color-neutral-dark-grayish-blue;
+}
+
+.heading-primary {
+  @extend %heading;
+  font-size: clamp($font-size-2xl, calc(1.315vw + 2.707rem), $font-size-4xl);
+  letter-spacing: clamp(
+    $letter-spacing-negative-3,
+    calc(-0.00216vw - 0.00439rem),
+    $letter-spacing-negative-5
+  );
+  margin-bottom: 1.6rem;
+}
+
+.heading-secondary {
+  @extend %heading;
+  font-size: clamp($font-size-xl, calc(0.751vw + 2.519rem), $font-size-3xl);
+  letter-spacing: clamp(
+    $letter-spacing-negative-2,
+    calc(-0.00122vw - 0.00415rem),
+    $letter-spacing-negative-4
+  );
+  margin-bottom: 1.6rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 1.9rem;
+  }
+}
+
+.heading-tertiary {
+  @extend %heading;
+  font-size: $font-size-lg;
+  letter-spacing: $letter-spacing-negative-1;
+}
+
+%paragraph {
+  font-weight: $font-weight-normal;
+  line-height: clamp(
+    $line-height-md,
+    calc(0.376vw + 2.459rem),
+    $line-height-lg
+  );
+  color: $color-neutral-grayish-blue;
+}
+
+.paragraph-primary {
+  @extend %paragraph;
+  font-size: clamp($font-size-sm, calc(0.375vw + 1.46rem), $font-size-md);
+  letter-spacing: clamp(
+    $letter-spacing-tighter,
+    calc(0.00029vw + 0.00109rem),
+    $letter-spacing-normal
+  );
+  text-wrap: pretty;
+}
+
+.paragraph-secondary {
+  @extend %paragraph;
+  font-size: clamp($font-size-sm, calc(0.188vw + 1.5295rem), $font-size-base);
+  letter-spacing: clamp(
+    $letter-spacing-tighter,
+    calc(0.000188vw + 0.00113rem),
+    $letter-spacing-tight
+  );
+  text-wrap: pretty;
+}
+
+.paragraph-tertiary {
+  @extend %paragraph;
+  font-size: $font-size-sm;
+  letter-spacing: $letter-spacing-tighter;
+}

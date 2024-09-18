@@ -1,0 +1,10 @@
+.text-box {
+  max-width: 73rem;
+  width: 100%;
+  margin-inline: auto;
+
+  // the text-box that have a heading-tertiary container inside will have a maxwidth of 35rem as a text-box container
+  &:has(.heading-tertiary) {
+    max-width: 35rem;
+  }
+}
